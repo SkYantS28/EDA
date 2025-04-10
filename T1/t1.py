@@ -36,3 +36,12 @@ plt.plot(x, y2, label='y = -x + 2', color='red')
 plt.scatter(x_intersecao, y_intersecao, color='purple,' zorder=5)
 plt.text(x_intersecao, y_intersecao, f'({x_intersecao:.2f}, {y_intersecao:.2f})', fontsize=9, ha='left', va='bottom')
 
+# organizar
+plt.title('Sistema de Equações Lineares')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.grid(True)
+plt.axhline(0, color='black', linewidth=0.5)
+plt.axvline(0, color='black', linewidth=0.5)
+plt.show()
