@@ -24,3 +24,11 @@ np.random.seed(42)  # resultados sejam reproduzíveis
 temperatura = np.random.uniform(18, 35, (dias, ciclos_por_dia))
 umidade = np.random.uniform(30, 90, (dias, ciclos_por_dia))
 pressao = np.random.uniform(980, 1030, (dias, ciclos_por_dia))
+
+# definir dia de interesse (vigésimo dia)
+dia_interesse = 19  #índice é 19 porque começa de 0
+
+# obter os dados do vigésimo dia
+temperatura_dia_20 = temperatura[dia_interesse]
+umidade_dia_20 = umidade[dia_interesse]
+pressao_dia_20 = pressao[dia_interesse]
