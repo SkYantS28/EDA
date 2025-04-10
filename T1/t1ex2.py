@@ -33,3 +33,7 @@ else:
     # resultado
     print("Raiz 1:", r1)
     print("Raiz 2:", r2)
+
+    # resultado com 2 casas decimais
+    print("Raiz 1:", round(r1, 2))
+    print("Raiz 2:", round(r2, 2))
