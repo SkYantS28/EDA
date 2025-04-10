@@ -35,3 +35,9 @@ Exercícios 03
 # definir função p encontarr
 def f(x):
     return (x ** 3) - x - 2
+
+# função implementar metodo bisseção p encontrar raiz
+def bissecao(a, b, precisao):
+    if f(a) * f(b) >= 0: #verifica se sinais são opostos
+        print("O m´rtodo de bissesão não pode ser aplicado, pois f(a) e f(b) devem ter sinais opostos.")
+        return None
