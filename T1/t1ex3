@@ -1,0 +1,33 @@
+'''
+Exercícios 03
+
+    Encontrando um ponto dentro de uma Função
+    N|Solid
+
+    Como engenheiro de software voce recebeu a missão de encontrar o valor aproximado de ( x ) que faz com que uma determinada função ( f(x) ) seja igual a zero.
+
+    Para isso, como explicado nas aulas anteriores você sabe que o valor deverá ser investigado dentro de um intervalo ([a, b]), onde:
+
+    ( f(a) ) e ( f(b) ) possuem sinais opostos (um é positivo e o outro é negativo).
+
+    O seu objetivo é criar um algoritmo que, a cada etapa, reduza esse intervalo até obter um valor de ( x ) com um erro aceitável.
+
+    Passos:
+        Escolha um ponto médio ( m ) entre ( a ) e ( b ).
+
+        Avalie ( f(m) ).
+
+        Se ( f(m) ) for suficientemente próximo de zero, pare. Caso contrário:
+        
+            Se ( f(m) ) e ( f(a) ) tiverem sinais opostos, então a raiz está entre ( a ) e ( m ), e você deve descartar ( b ).
+
+            Caso contrário, o valor de interesse está entre ( m ) e ( b ), e você deve descartar ( a ).
+
+        Repita o processo até atingir a precisão desejada.
+
+        Aplique esse método para encontrar este ponto na função:
+
+            [ f(x) = x^3 - x - 2 ]
+
+        no intervalo ([1, 2]) com uma precisão de ( 10^{-4} ).
+'''
