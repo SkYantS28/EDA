@@ -19,3 +19,8 @@ ciclos_por_dia = (24 * 60) // 10  # 24h divididas em ciclos de 10 minutos
 
 # gerar dados fictícios para temperatura, umidade e pressão
 np.random.seed(42)  # resultados sejam reproduzíveis
+
+#criar arrays(listas) de dados aleatórios para cada grandeza climática para 30 dias
+temperatura = np.random.uniform(18, 35, (dias, ciclos_por_dia))
+umidade = np.random.uniform(30, 90, (dias, ciclos_por_dia))
+pressao = np.random.uniform(980, 1030, (dias, ciclos_por_dia))
