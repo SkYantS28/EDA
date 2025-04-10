@@ -61,3 +61,9 @@ precisao = 1e-4 #1×10^−4, ou seja, o número 0.0001
 # chamar função bissecao com os valores definidos
 raiz = bissecao(a, b, precisao)
 print(f"A raiz aproximada é: {round(raiz, 2)}")
+
+'''
+terminal:
+A raiz aproximada é: 1.52
+PS C:\Users\Sky Crizosti\OneDrive\Desktop\faculdade\quarto_periodo\estrutura_algoritmo_avançado> 
+'''
