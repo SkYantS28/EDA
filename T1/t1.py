@@ -54,3 +54,12 @@ erro:
 SyntaxError: invalid syntax
 PS C:\Users\Sky Crizosti\OneDrive\Desktop\faculdade\quarto_periodo\estrutura_algoritmo_avançado> 
 '''
+            
+'''
+novo erro:
+  File "c:\Users\Sky Crizosti\OneDrive\Desktop\faculdade\quarto_periodo\estrutura_algoritmo_avançado\T1\t1.py", line 36
+    plt.scatter(x_intersecao, y_intersecao, color='purple,' zorder=5)
+                                                  ^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+PS C:\Users\Sky Crizosti\OneDrive\Desktop\faculdade\quarto_periodo\estrutura_algoritmo_avançado> 
+'''
