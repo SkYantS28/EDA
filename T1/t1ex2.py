@@ -26,11 +26,4 @@ if delta < 0:
     print(f'A equação 2𝑥ˆ2 + 2𝑥 − 6, não possui raízes reais. Pois o valor de seu delta é: {delta}. Sendo inferior a zero.')
 else:
     # calcular raizes reais
-    # -b +- delta / 2 * a
-    r1 = (-b + delta / (2 * a))
-
-    #verificar
-    print(r1)
-
-    resultado = (-2 + (2**2) - (4 * 2 *(-6)) / (2*a))
-    print(resultado)
+    # -b + delta ** 0.5) / (2 * a)
