@@ -16,3 +16,8 @@ import matplotlib.pyplot as plt
 # Ax = B
 A = np.array([[0.5, -1], [1, 1]])
 B = np.array([-0.5, 2])
+
+# interseção
+solucao = np.linalg.solve(A, B)
+x_intersecao, y_intersecao = solucao
+print(f'O ponto de interseção é: x = {x_intersecao}, y = {y_intersecao}')
