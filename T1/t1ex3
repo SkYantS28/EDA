@@ -52,3 +52,8 @@ def bissecao(a, b, precisao):
         else:
             a = m #senão, raiz esta entre 'm' e 'b'
     return (a + b) / 2 #retornna media entre 'a' e 'b' fomo raiz aprox
+
+# definir intervalo 'a,b / precisão desejada para o calculo da raiz
+a = 1
+b = 2
+precisao = 1e-4 #1×10^−4, ou seja, o número 0.0001
