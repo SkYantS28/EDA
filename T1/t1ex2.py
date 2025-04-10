@@ -11,3 +11,10 @@ Exercício 02
     
     Desta forma, resolva a função 2𝑥ˆ2 + 2𝑥 − 6.
 '''
+
+# coeficiente da equaç~~ao
+a = (2 ** 2)
+b = 2
+c = -6
+
+print(a) #4
