@@ -54,7 +54,6 @@ Exercícios 05
         Este enunciado exige que o aluno utilize listas para armazenar os filhos de cada membro, dicionários para armazenar informações sobre cada membro e recursividade para buscar descendentes e antepassados.
 '''
 
-
 class ArvoreGenealogica:
     def __init__(self):
         self.membros = []
@@ -71,3 +70,70 @@ class ArvoreGenealogica:
         
         # adicionar membro à lista de membros da árvore
         self.membros.append(novo_membro)
+
+    def buscar_membro(self, nome):
+        # buscar membro pelo nome
+        for membro in self.membros:
+            if membro['nome'] == nome:
+                return membro
+        return None
+
+    def descendentes(self, nome):
+        # buscar o membro
+        membro = self.buscar_membro(nome)
+        if membro:
+            # lista armazenar os descendentes
+            lista_descendentes = []
+            # adicionar filhos diretamente
+            for filho in membro['filhos']:
+                lista_descendentes.append(filho['nome'])
+                # recursivamente adicionar descendentes dos filhos
+                lista_descendentes.extend(self.descendentes(filho['nome']))
+            return lista_descendentes
+        return []
+
+    def antepassados(self, nome):
+        # buscar o membro
+        membro = self.buscar_membro(nome)
+        if membro:
+            lista_antepassados = []
+            # verificar membro tem pai
+            if membro['pai']:
+                pai = self.buscar_membro(membro['pai'])
+                if pai:
+                    # determinar grau de parentesco
+                    lista_antepassados.append(f"Pai: {pai['nome']}")
+                    # recursivamente adicionar os antepassados do pai
+                    lista_antepassados.extend(self.antepassados_paterno(pai['nome'], "Avô"))
+            return lista_antepassados
+        return []
+
+    def antepassados_paterno(self, nome, grau):
+        # bscar o membro
+        membro = self.buscar_membro(nome)
+        if membro:
+            lista_antepassados = []
+            # se houver pai, adicionar o nome do pai com a relação
+            if membro['pai']:
+                pai = self.buscar_membro(membro['pai'])
+                if pai:
+                    lista_antepassados.append(f"{grau}: {pai['nome']}")
+                    # recursivamente adicionar antepassados do pai
+                    lista_antepassados.extend(self.antepassados_paterno(pai['nome'], "Bisavô"))
+            return lista_antepassados
+        return []
+
+# criando a AG
+arvore = ArvoreGenealogica()
+
+# sdicionando membros
+arvore.adicionar_membro("João", 70, "Masculino")
+arvore.adicionar_membro("Carlos", 50, "Masculino", pai="João")
+arvore.adicionar_membro("Pedro", 30, "Masculino", pai="Carlos")
+arvore.adicionar_membro("Lucas", 10, "Masculino", pai="Pedro")
+
+# tstando a função descendentes
+print(arvore.descendentes("João"))  # Esperado: ['Carlos', 'Pedro', 'Lucas']
+
+# testando a função antepassados
+print(arvore.antepassados("Lucas"))  # Esperado: ['Pai: Pedro', 'Avô: Carlos', 'Bisavô: João']
