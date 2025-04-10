@@ -27,3 +27,5 @@ if delta < 0:
 else:
     # calcular raizes reais
     # -b + delta ** 0.5) / (2 * a)
+    r1 = (-b + delta ** 0.5) / (2 * a)
+    r2 = (-b - delta ** 0.5) / (2 * a)
