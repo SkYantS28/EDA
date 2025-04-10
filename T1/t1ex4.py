@@ -10,3 +10,8 @@ Exercícios 04
         A quantidade de ciclos por período de coleta neste dia.
 
 '''
+import numpy as np
+
+# definir número de dias e ciclos
+dias = 30
+ciclos_por_dia = (24 * 60) // 10  # 24h divididas em ciclos de 10 minutos
