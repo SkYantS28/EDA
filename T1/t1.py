@@ -45,3 +45,12 @@ plt.grid(True)
 plt.axhline(0, color='black', linewidth=0.5)
 plt.axvline(0, color='black', linewidth=0.5)
 plt.show()
+
+'''
+erro:
+  File "c:\Users\Sky Crizosti\OneDrive\Desktop\faculdade\quarto_periodo\estrutura_algoritmo_avançado\T1\t1.py", line 32
+    plt.plot(x, y1, label='y = 0.5x + 0.5'. color='blue')
+                                                 ^
+SyntaxError: invalid syntax
+PS C:\Users\Sky Crizosti\OneDrive\Desktop\faculdade\quarto_periodo\estrutura_algoritmo_avançado> 
+'''
