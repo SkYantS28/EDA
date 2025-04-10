@@ -15,3 +15,7 @@ import numpy as np
 # definir número de dias e ciclos
 dias = 30
 ciclos_por_dia = (24 * 60) // 10  # 24h divididas em ciclos de 10 minutos
+
+
+# gerar dados fictícios para temperatura, umidade e pressão
+np.random.seed(42)  # resultados sejam reproduzíveis
