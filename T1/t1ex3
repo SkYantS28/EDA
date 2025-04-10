@@ -41,3 +41,14 @@ def bissecao(a, b, precisao):
     if f(a) * f(b) >= 0: #verifica se sinais são opostos
         print("O m´rtodo de bissesão não pode ser aplicado, pois f(a) e f(b) devem ter sinais opostos.")
         return None
+    
+    # loop divide intevalo a,b ate precisao desejada ser atingida
+    while (b - a) / 2 > precisao:
+        m = (a + b) / 2 #ponto medio
+        if f(m) == 0:
+            break #achou raiz exata, sai do loop
+        elif f(a) * f(m) < 0:
+            b = m # se for negativo, a razis esta entre 'a' e 'm'
+        else:
+            a = m #senão, raiz esta entre 'm' e 'b'
+    return (a + b) / 2 #retornna media entre 'a' e 'b' fomo raiz aprox
