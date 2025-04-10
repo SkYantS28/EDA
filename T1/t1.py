@@ -63,3 +63,8 @@ novo erro:
 SyntaxError: invalid syntax. Perhaps you forgot a comma?
 PS C:\Users\Sky Crizosti\OneDrive\Desktop\faculdade\quarto_periodo\estrutura_algoritmo_avançado> 
 '''
+
+'''
+img que apareceu:
+    ex1.png
+'''
