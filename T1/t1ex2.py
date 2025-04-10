@@ -13,8 +13,10 @@ Exercício 02
 '''
 
 # coeficiente da equaç~~ao
-a = (2 ** 2)
+a = 2
 b = 2
 c = -6
 
-print(a) #4
+# calcular delta
+#b^2 - 4ac
+delta = (b ** 2) - 4 * a * c
