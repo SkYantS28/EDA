@@ -53,3 +53,21 @@ Exercícios 05
         
         Este enunciado exige que o aluno utilize listas para armazenar os filhos de cada membro, dicionários para armazenar informações sobre cada membro e recursividade para buscar descendentes e antepassados.
 '''
+
+
+class ArvoreGenealogica:
+    def __init__(self):
+        self.membros = []
+
+    def adicionar_membro(self, nome, idade, sexo, pai=None):
+        #criar dicionário novo membro
+        novo_membro = {'nome': nome, 'idade': idade, 'sexo': sexo, 'filhos': [], 'pai': pai}
+        
+        # se um pai for especificado, adicionar o novo membro como filho
+        if pai:
+            pai_encontrado = self.buscar_membro(pai)
+            if pai_encontrado:
+                pai_encontrado['filhos'].append(novo_membro)
+        
+        # adicionar membro à lista de membros da árvore
+        self.membros.append(novo_membro)
