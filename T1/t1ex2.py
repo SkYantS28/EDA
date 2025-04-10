@@ -29,3 +29,7 @@ else:
     # -b + delta ** 0.5) / (2 * a)
     r1 = (-b + delta ** 0.5) / (2 * a)
     r2 = (-b - delta ** 0.5) / (2 * a)
+    
+    # resultado
+    print("Raiz 1:", r1)
+    print("Raiz 2:", r2)
