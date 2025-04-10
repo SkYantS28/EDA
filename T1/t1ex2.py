@@ -37,3 +37,10 @@ else:
     # resultado com 2 casas decimais
     print("Raiz 1:", round(r1, 2))
     print("Raiz 2:", round(r2, 2))
+'''
+terminaç:
+Raiz 1: 1.3027756377319946
+Raiz 2: -2.302775637731995
+Raiz 1: 1.3
+Raiz 2: -2.3
+'''
