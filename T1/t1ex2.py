@@ -20,3 +20,8 @@ c = -6
 # calcular delta
 #b^2 - 4ac
 delta = (b ** 2) - 4 * a * c
+
+# existe raiz real?
+if delta < 0:
+    print(f'A equação 2𝑥ˆ2 + 2𝑥 − 6, não possui raízes reais. Pois o valor de seu delta é: {delta}. Sendo inferior a zero.')
+else:
