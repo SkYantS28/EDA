@@ -68,3 +68,8 @@ PS C:\Users\Sky Crizosti\OneDrive\Desktop\faculdade\quarto_periodo\estrutura_alg
 img que apareceu:
     ex1.png
 '''
+
+'''
+terminal:
+    O ponto de interseção é: x = 1.0, y = 1.0
+'''
