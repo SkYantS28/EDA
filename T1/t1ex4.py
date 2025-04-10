@@ -32,3 +32,16 @@ dia_interesse = 19  #índice é 19 porque começa de 0
 temperatura_dia_20 = temperatura[dia_interesse]
 umidade_dia_20 = umidade[dia_interesse]
 pressao_dia_20 = pressao[dia_interesse]
+
+# calcular valores min, max e médios
+min_temp = np.min(temperatura_dia_20)
+max_temp = np.max(temperatura_dia_20)
+media_temp = np.mean(temperatura_dia_20)
+
+min_umidade = np.min(umidade_dia_20)
+max_umidade = np.max(umidade_dia_20)
+media_umidade = np.mean(umidade_dia_20)
+
+min_pressao = np.min(pressao_dia_20)
+max_pressao = np.max(pressao_dia_20)
+media_pressao = np.mean(pressao_dia_20)
